@@ -1,0 +1,13 @@
+Flask==3.0.3
+gevent==24.2.1
+PyYAML==6.0.2
+numpy==1.24.4
+requests==2.25.1
+opencv-contrib-python==4.9.0.80
+opencv-python==4.11.0.86
+pynput==1.7.7
+pygame==2.6.0
+machinevision-toolbox-python==0.9.7
+spatialmath-python==1.1.10
+matplotlib==3.9.1
+ultralytics==8.0.20
