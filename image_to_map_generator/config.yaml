@@ -1,0 +1,44 @@
+# Config file for the map generator
+---
+# ===============================================
+# Main params to modify
+# ===============================================
+input_image: example_input_image.jpg
+output_map_name: test_output.txt
+
+# a reference map to specify the objects (how many for each type) on the map
+reference_map: example_reference_map.txt
+
+# fruits - list of fruits to be placed in the arena and their colours
+fruits: # BGR 
+  lemon: [0, 255, 255] # Yellow
+  pumpkin: [0, 128, 255] # Orange  
+  tomato: [0, 0, 255]  # Red
+  lime: [0, 102, 0] # Dark green
+  garlic: [255, 255, 255] # White
+  capsicum: [255, 255, 0] # Cyan
+  potato: [0, 51, 102] # Dark brown
+  pear: [51, 255, 51] # Bright green
+
+# change this if the GUI is too big for your screen
+image_display_res:
+  x: 700
+  y: 450
+
+# increase this if it is difficult to click on the objects
+max_click_radius: 25  # unit: [pixels]
+
+arena_size: # unit: [m]
+  x: 3.0
+  y: 3.0
+
+# ===============================================
+# less important params (recommend not to change)
+# ===============================================
+ArUco_block_size: 0.08  # unit: [m]
+border_size: 2
+grid_size: 1
+reference_error_line_size: 1
+object_point_size: 12
+ArUco_font_size: 0.5
+ArUco_font_thickness: 1
